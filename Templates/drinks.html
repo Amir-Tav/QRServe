@@ -4,5 +4,25 @@
 
 {% block content %}
 <h1>Drinks</h1>
-<p>This is the drinks page. just checking  for dynamic interactions </p>
+<div class="item">
+    <h2>Beer</h2>
+    <img src="{{ url_for('static', filename='images/beer.jpg') }}" alt="Beer">
+    <p>A selection of local and international beers.</p>
+</div>
+<div class="item">
+    <h2>Wine</h2>
+    <img src="{{ url_for('static', filename='images/wine.jpg') }}" alt="Wine">
+    <p>Red, white, and sparkling wines from various regions.</p>
+</div>
+<div class="item">
+    <h2>Spirits</h2>
+    <img src="{{ url_for('static', filename='images/spirits.jpg') }}" alt="Spirits">
+    <p>Premium spirits including whiskey, vodka, and gin.</p>
+</div>
+<div class="item">
+    <h2>Cocktail</h2>
+    <img src="{{ url_for('static', filename='images/cocktail.jpg') }}" alt="Cocktail">
+    <p>A variety of classic and contemporary cocktails.</p>
+</div>
+
 {% endblock %}

@@ -4,5 +4,25 @@
 
 {% block content %}
 <h1>Menu</h1>
-<p>This is the menu page.</p>
+<div class="item">
+    <h2>Steak</h2>
+    <img src="{{ url_for('static', filename='images/steak.jpg') }}" alt="Steak">
+    <p>A delicious grilled steak, seasoned to perfection.</p>
+</div>
+<div class="item">
+    <h2>Burger</h2>
+    <img src="{{ url_for('static', filename='images/burger.jpg') }}" alt="Burger">
+    <p>A juicy beef burger with lettuce, tomato, and cheese.</p>
+</div>
+<div class="item">
+    <h2>Salad</h2>
+    <img src="{{ url_for('static', filename='images/salad.jpg') }}" alt="Salad">
+    <p>A fresh garden salad with a variety of vegetables.</p>
+</div>
+<div class="item">
+    <h2>Pasta</h2>
+    <img src="{{ url_for('static', filename='images/pasta.jpg') }}" alt="Pasta">
+    <p>Italian pasta with a rich tomato sauce and herbs.</p>
+</div>
+
 {% endblock %}
