@@ -1,1 +1,0 @@
-print ("Hello world, btw John is still gay in 2024")
