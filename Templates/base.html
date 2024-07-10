@@ -3,17 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}My Web App{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{% block title %}Drought Game Board Cafe{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/cart.js') }}" defer></script>
 </head>
 <body>
     <nav>
-        <a href="{{ url_for('home') }}">Home</a>
-        <a href="{{ url_for('menu') }}">Menu</a>
-        <a href="{{ url_for('drinks') }}">Drinks</a>
+        <div class="nav-left">
+            <a href="{{ url_for('home') }}" title="Home"><i class="fas fa-home icon"></i></a>
+            <a href="{{ url_for('menu') }}" title="Menu"><i class="fas fa-utensils icon"></i></a>
+            <a href="{{ url_for('drinks') }}" title="Drinks"><i class="fas fa-glass-martini-alt icon"></i></a>
+        </div>
+        <div class="nav-right">
+            <a href="{{ url_for('cart') }}" title="Cart"><i class="fas fa-shopping-cart icon"></i></a>
+            <span id="cart-total-header"></span>
+        </div>
     </nav>
     <div class="container">
         {% block content %}{% endblock %}
     </div>
+    <footer>
+        <p>&copy; 2024 Drought Game Board Cafe. All rights reserved.</p>
+    </footer>
 </body>
 </html>

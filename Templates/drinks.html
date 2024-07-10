@@ -6,23 +6,26 @@
 <h1>Drinks</h1>
 <div class="item">
     <h2>Beer</h2>
-    <img src="{{ url_for('static', filename='images/beer.jpg') }}" alt="Beer">
-    <p>A selection of local and international beers.</p>
+    <img src="{{ url_for('static', filename='images/drinks/beer.jpg') }}" alt="Beer">
+    <p>A selection of local and international beers, perfect for any occasion. Price: $5.00</p>
+    <button class="add-to-cart" data-name="Beer" data-price="5.00">Add to Cart</button>
 </div>
 <div class="item">
     <h2>Wine</h2>
-    <img src="{{ url_for('static', filename='images/wine.jpg') }}" alt="Wine">
-    <p>Red, white, and sparkling wines from various regions.</p>
+    <img src="{{ url_for('static', filename='images/drinks/wine.jpg') }}" alt="Wine">
+    <p>Red, white, and sparkling wines from various regions, carefully selected to complement our menu. Price: $12.00</p>
+    <button class="add-to-cart" data-name="Wine" data-price="12.00">Add to Cart</button>
 </div>
 <div class="item">
     <h2>Spirits</h2>
-    <img src="{{ url_for('static', filename='images/spirits.jpg') }}" alt="Spirits">
-    <p>Premium spirits including whiskey, vodka, and gin.</p>
+    <img src="{{ url_for('static', filename='images/drinks/spirits.jpg') }}" alt="Spirits">
+    <p>Premium spirits including whiskey, vodka, and gin, perfect for sipping or mixing. Price: $8.00</p>
+    <button class="add-to-cart" data-name="Spirits" data-price="8.00">Add to Cart</button>
 </div>
 <div class="item">
     <h2>Cocktail</h2>
-    <img src="{{ url_for('static', filename='images/cocktail.jpg') }}" alt="Cocktail">
-    <p>A variety of classic and contemporary cocktails.</p>
+    <img src="{{ url_for('static', filename='images/drinks/cocktail.jpg') }}" alt="Cocktail">
+    <p>A variety of classic and contemporary cocktails, crafted by our skilled bartenders. Price: $10.00</p>
+    <button class="add-to-cart" data-name="Cocktail" data-price="10.00">Add to Cart</button>
 </div>
-
 {% endblock %}

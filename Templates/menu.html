@@ -6,23 +6,34 @@
 <h1>Menu</h1>
 <div class="item">
     <h2>Steak</h2>
-    <img src="{{ url_for('static', filename='images/steak.jpg') }}" alt="Steak">
-    <p>A delicious grilled steak, seasoned to perfection.</p>
+    <img src="{{ url_for('static', filename='images/menu/steak.jpg') }}" alt="Steak">
+    <p>A delicious grilled steak, seasoned to perfection. Served with a side of vegetables and mashed potatoes. Price: $20.00</p>
+    <button class="add-to-cart" data-name="Steak" data-price="20.00">Add to Cart</button>
+    <button class="increase-quantity" data-name="Steak" data-price="20.00">+</button>
+    <span class="item-quantity" id="quantity-Steak">0</span>
 </div>
 <div class="item">
     <h2>Burger</h2>
-    <img src="{{ url_for('static', filename='images/burger.jpg') }}" alt="Burger">
-    <p>A juicy beef burger with lettuce, tomato, and cheese.</p>
+    <img src="{{ url_for('static', filename='images/menu/burger.jpg') }}" alt="Burger">
+    <p>A juicy beef burger with lettuce, tomato, cheese, and our special sauce. Comes with a side of fries. Price: $10.00</p>
+    <button class="add-to-cart" data-name="Burger" data-price="10.00">Add to Cart</button>
+    <button class="increase-quantity" data-name="Burger" data-price="10.00">+</button>
+    <span class="item-quantity" id="quantity-Burger">0</span>
 </div>
 <div class="item">
     <h2>Salad</h2>
-    <img src="{{ url_for('static', filename='images/salad.jpg') }}" alt="Salad">
-    <p>A fresh garden salad with a variety of vegetables.</p>
+    <img src="{{ url_for('static', filename='images/menu/salad.jpg') }}" alt="Salad">
+    <p>A fresh garden salad with a variety of vegetables, topped with a light vinaigrette dressing. Price: $7.00</p>
+    <button class="add-to-cart" data-name="Salad" data-price="7.00">Add to Cart</button>
+    <button class="increase-quantity" data-name="Salad" data-price="7.00">+</button>
+    <span class="item-quantity" id="quantity-Salad">0</span>
 </div>
 <div class="item">
     <h2>Pasta</h2>
-    <img src="{{ url_for('static', filename='images/pasta.jpg') }}" alt="Pasta">
-    <p>Italian pasta with a rich tomato sauce and herbs.</p>
+    <img src="{{ url_for('static', filename='images/menu/pasta.jpg') }}" alt="Pasta">
+    <p>Italian pasta with a rich tomato sauce and herbs. Served with garlic bread. Price: $15.00</p>
+    <button class="add-to-cart" data-name="Pasta" data-price="15.00">Add to Cart</button>
+    <button class="increase-quantity" data-name="Pasta" data-price="15.00">+</button>
+    <span class="item-quantity" id="quantity-Pasta">0</span>
 </div>
-
 {% endblock %}
